@@ -1,5 +1,42 @@
+.bordes {
+    height: 1000px;
+    width: 100%;
+    display: block;
+    background-color: brown;
+}
+.cabecera {
+    display: flex;
+    height: 10%;
+    width: 100%;
+    background-color: blueviolet;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    width: 250px;
+    height: 150px;
+}
+/*Cabecera*/
 .prueba {
-    background-color: red;
-    width: 100px;
-    height: 50px;
+    background-color: cornflowerblue;
+    width: 100%;
+    padding-bottom: 30px;
+    border-color: aqua;
+    border-radius: 10px;
+    display: block;
   }  
+.titulo {
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.caja_botones {
+    display: block;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    margin-left: 10%;
+    width: 80%;
+    background-color: azure;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
