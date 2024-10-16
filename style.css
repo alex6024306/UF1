@@ -1,17 +1,19 @@
-html, body {
+body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
     overflow-x: hidden; /* Evitar que se pueda hacer scroll horizontal */
+    background-image: url(purple-city-lights-animation-ktj1qnju9jpsjxrd.gif);
 }
 
 /* Ajustar el fondo de la página para cubrir toda la pantalla sin bordes */
 .bordes {
     min-height: 100vh; /* Asegura que el contenedor ocupe al menos toda la altura de la ventana */
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
     display: block;
-    background-image: url(milky-way-starry-sky-night-sky-star-956999.jpeg);
+    background-color: white;
     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la pantalla */
     background-position: center; /* Centra la imagen de fondo */
     background-attachment: fixed; /* Mantiene la imagen fija mientras haces scroll */
@@ -29,7 +31,7 @@ html, body {
     padding: 10px;
     background: linear-gradient(
         to bottom, 
-        rgba(138, 43, 226, 1) 75%,  /* Comienza opaco en el 75% */
+        rgb(101, 11, 219) 75%,  /* Comienza opaco en el 75% */
         rgba(138, 43, 226, 0) 100% /* Se hace completamente transparente en el 100% */
     );
     z-index: 1000; /* Asegúrate de que la cabecera esté sobre el contenido */
@@ -55,16 +57,35 @@ html, body {
     text-align: center;
     padding-top: 10px;
     margin-top: 10px;
+    margin-top: 50px;
+    color: rgb(138, 43, 226);
 }
 
 .caja_botones {
     margin-left: 10%;
-    background-color: azure;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 1vw;
+    grid-gap: 3vw;
     margin: 0 auto;
-    padding: 0 3vw;
+    padding: 3vw 3vw;
     width: 60%;
+    position: relative; /* Necesario para aplicar el background correctamente */
+
+    /* Aplicamos varios gradientes para los bordes */
+    background: 
+        /* Gradiente hacia abajo (borde superior) */
+        linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(138, 43, 226, 0.7)) top,
+        /* Gradiente hacia arriba (borde inferior) */
+        linear-gradient(to top, rgba(255, 255, 255, 1), rgba(138, 43, 226, 0.7)) bottom,
+        /* Gradiente hacia la derecha (borde izquierdo) */
+        linear-gradient(to right, rgba(255, 255, 255, 1), rgba(138, 43, 226, 0.7)) left,
+        /* Gradiente hacia la izquierda (borde derecho) */
+        linear-gradient(to left, rgba(255, 255, 255, 1), rgba(138, 43, 226, 0.7)) right,
+        /* Color de fondo en el centro */
+        rgba(138, 43, 226, 0.7);
+
+    background-size: 100% 5px, 100% 5px, 5px 100%, 5px 100%, 100% 100%;
+    background-repeat: no-repeat;
+    background-position: top, bottom, left, right, center;
 }
