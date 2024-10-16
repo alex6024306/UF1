@@ -71,21 +71,6 @@ body {
     padding: 3vw 3vw;
     width: 60%;
     position: relative; /* Necesario para aplicar el background correctamente */
-
-    /* Aplicamos varios gradientes para los bordes */
-    background: 
-        /* Gradiente hacia abajo (borde superior) */
-        linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(138, 43, 226, 0.7)) top,
-        /* Gradiente hacia arriba (borde inferior) */
-        linear-gradient(to top, rgba(255, 255, 255, 1), rgba(138, 43, 226, 0.7)) bottom,
-        /* Gradiente hacia la derecha (borde izquierdo) */
-        linear-gradient(to right, rgba(255, 255, 255, 1), rgba(138, 43, 226, 0.7)) left,
-        /* Gradiente hacia la izquierda (borde derecho) */
-        linear-gradient(to left, rgba(255, 255, 255, 1), rgba(138, 43, 226, 0.7)) right,
-        /* Color de fondo en el centro */
-        rgba(138, 43, 226, 0.7);
-
-    background-size: 100% 5px, 100% 5px, 5px 100%, 5px 100%, 100% 100%;
-    background-repeat: no-repeat;
-    background-position: top, bottom, left, right, center;
+    background-color: blueviolet;
+    box-shadow: 0cqmax ;
 }
