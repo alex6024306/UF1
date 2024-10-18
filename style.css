@@ -147,3 +147,6 @@ body {
 .formulario button:hover {
     background-color: #5321b8;
 }
+.negro label{
+    color: black;
+}
