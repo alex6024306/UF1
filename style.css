@@ -156,3 +156,12 @@ body {
 .negro label{
     color: black;
 }
+footer{
+    background-color: #5321b8;
+    width: 100%;
+    height: 100px;
+    font-size: large;
+}
+footer p{
+    margin-top: 0;
+}
